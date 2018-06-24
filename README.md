@@ -1,24 +1,20 @@
-# README
+# Sparta-Advanced-Models-Lab-MVC
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Purpose
+The purpose of this project was to build a blog using Rails nested routes. I had to make sure the seven restful routes worked after the model relationships were set and the routes were nested.
 
-Things you may want to cover:
 
-* Ruby version
+## Implementation
+The funcitonality has been implemented using Ruby on Rails.
 
-* System dependencies
 
-* Configuration
+#### Download
+To download the code visit the github repo name Sparta-Nest-Routes-Models and click the clone or download button to download as zip.
+Alternatively the following command can be copied into the terminal:
 
-* Database creation
+```
+git clone hub.com/isabelvalente/Sparta-Nested-Routes-Models
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Challenges
+The biggest challenge to this project was to adjust the paths after I nested the routes. It was hard to understand some of the error messages. But as this exercise exposed me to many errors I have learnt a lot about how to fix certain errors.
