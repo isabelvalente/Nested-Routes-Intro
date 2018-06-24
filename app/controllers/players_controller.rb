@@ -62,7 +62,7 @@ class PlayersController < ApplicationController
     @player.destroy
     @manager = Manager.find(params[:manager_id])
     respond_to do |format|
-      format.html { redirect_to players_url, notice: 'Player was successfully destroyed.' }
+      format.html { redirect_to manager_players_path, notice: 'Player was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
