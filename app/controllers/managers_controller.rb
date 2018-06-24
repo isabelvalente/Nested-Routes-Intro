@@ -10,6 +10,7 @@ class ManagersController < ApplicationController
   # GET /managers/1
   # GET /managers/1.json
   def show
+    @player = Player.all
   end
 
   # GET /managers/new

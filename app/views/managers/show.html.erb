@@ -23,3 +23,25 @@
 <%= link_to 'Edit', edit_manager_path(@manager) %> |
 <%= link_to 'Back', managers_path %> |
 <%= link_to 'New Player', new_manager_player_path(@manager) %>
+
+<table>
+  <thead>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Team</th>
+  </thead>
+</table>
+
+<body>
+  <% @player.each do |player| %>
+    <% if(player.manager.id == @manager.id) %>
+      <tr>
+        <td><%= player.first_name %></td>
+        <td><%= player.last_name %></td>
+        <td><%= player.team %></td>
+        <td><%= link_to 'See More', manager_player_path(@manager, player)%></td>
+        <td><%= link_to 'Delete', manager_player_url(@manager, player), method: :delete %></td>
+      </tr>
+    <% end %>
+  <% end %>
+</body>

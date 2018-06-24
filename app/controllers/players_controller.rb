@@ -29,7 +29,7 @@ class PlayersController < ApplicationController
   def create
     @player = Player.new(player_params)
     @manager = Manager.find(params[:manager_id])
-    @player.manager = @player
+    @player.manager = @manager
     respond_to do |format|
       if @player.save
         format.html { redirect_to manager_path(@manager), notice: 'Player was successfully created.' }
