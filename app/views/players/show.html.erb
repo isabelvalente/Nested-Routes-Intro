@@ -20,5 +20,5 @@
   <%= @player.age %>
 </p>
 
-<%= link_to 'Edit', edit_player_path(@player) %> |
-<%= link_to 'Back', players_path %>
+<%= link_to 'Edit', edit_manager_player_path(@manager, @player) %> |
+<%= link_to 'Back', manager_path(@manager) %>
